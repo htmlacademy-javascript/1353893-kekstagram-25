@@ -7,6 +7,7 @@ function randomInteger (min, max) {
   return Math.floor(rand);
 }
 
+// вызов
 randomInteger();
 
 
