@@ -1,21 +1,20 @@
 // Функция возвращает рандомное число.
 function randomInteger (min, max) {
-  const rand = min + Math.random() * (max + 1 - min);
+
   if (min === max || min < 0 || max < 0) {
-    return false;
+    throw('Неверно введены данные');
   }
+  const rand = min + Math.random() * (max + 1 - min);
   return Math.floor(rand);
 }
 
-// вызов
+
 randomInteger();
 
 
-function checkLength(str, maxValue) {
-  if (str.length > maxValue) {
-    return true;
-  }
-  return false;
+function checkLength(str, maxLength) {
+  return str.length > maxLength;
+
 }
 
 checkLength();
