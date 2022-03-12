@@ -15,7 +15,7 @@ const getRandomArrayElement = (elements) => elements[randomInteger(0, elements.l
 
 
 const createComments = () => ({
-  id: makeCountValue(25),
+  id: makeCountValue(),
   avatar: `img/avatar-${randomInteger(1, 6)}.svg`,
   message: getRandomArrayElement(MESSAGES),
   name: getRandomArrayElement(NAMES),
@@ -23,7 +23,7 @@ const createComments = () => ({
 
 
 export const createUserInfo = () => ({
-  id: makeCountValue(25),
+  id: makeCountValue(),
   description: getRandomArrayElement(DESCRIPTION),
   likes: randomInteger(15, 200),
   url: `photos/${makeCountValue(25)}.jpg`,
