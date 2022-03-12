@@ -1,4 +1,4 @@
-import {randomInteger, makeCountValue} from './utils.js';
+import {randomInteger,makeCount} from './utils.js';
 
 const DESCRIPTION = [
   'Красивая фотография',
@@ -12,7 +12,7 @@ const NAMES = ['Алексей', 'Паша', 'Владимир', 'Алиса', '
 const MESSAGES = ['Всё отлично!', 'В целом всё неплохо. Но не всё.', 'Какая красивая фотография'];
 
 const getRandomArrayElement = (elements) => elements[randomInteger(0, elements.length -1)];
-
+const makeCountValue = makeCount();
 
 const createComments = () => ({
   id: makeCountValue(),

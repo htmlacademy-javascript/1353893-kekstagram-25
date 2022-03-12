@@ -5,7 +5,7 @@ export function randomInteger (min, max) {
 }
 
 // Функция счетчика
-function makeCount() {
+export function makeCount() {
   let sumCount = 0;
   return  () => {
     sumCount += 1;
@@ -13,5 +13,4 @@ function makeCount() {
   };
 }
 
-export const makeCountValue = makeCount();
 
